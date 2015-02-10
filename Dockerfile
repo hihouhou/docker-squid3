@@ -1,6 +1,6 @@
 ###############################################
-# Debian with added Teamspeak 3 Server.
-# Uses SQLite Database on default.
+# Debian with added Squid3 Server.
+# No cache only proxy.
 ###############################################
 
 # Using latest Ubuntu image as base
@@ -11,7 +11,7 @@ MAINTAINER hihouhou < hihouhou@hihouhou.com >
 # Pull base image.
 FROM debian:latest
 
-# Install Nginx.
+# Install squid3
 RUN \
   apt-get update && \
   apt-get install -y squid3
