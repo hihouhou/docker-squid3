@@ -6,7 +6,7 @@
 # Using latest debian image as base
 FROM debian:latest
 
-MAINTAINER hihouhou < hihouhou@hihouhou.com >
+LABEL org.opencontainers.image.authors="hihouhou < hihouhou@hihouhou.com >"
 
 # Pull base image.
 FROM debian:latest
